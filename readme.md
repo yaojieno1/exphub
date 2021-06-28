@@ -1,3 +1,7 @@
+# Notice
+~~终究还是觉得每个漏洞每个单独的脚本很不方便，故将所有的poc和exp脚本整在一起，可以一键扫描+漏洞利用，由于近期都在做整合所以exphub搁置许久没有更新，目前整合版已经接近尾声，将在10月发布（节后），敬请关注~~  
+已经发布 --->  https://github.com/zhzyker/vulmap
+
 # Exphub
 Exphub[漏洞利用脚本库] （想要star⭐~)  
 目前包括Webloigc、Struts2、Tomcat、Drupal的漏洞利用脚本，均为亲测可用的脚本文件，尽力补全所有脚本文件的使用说明文档，优先更新高危且易利用的漏洞利用脚本  
@@ -5,7 +9,7 @@ Exphub[漏洞利用脚本库] （想要star⭐~)
 鹅群：219291257  
 bilibili：https://space.bilibili.com/64648363
 
-最后更新：2020/07/08 (持续填坑中)，最近添加 **cve-2020-5902_file.py**, 重构**shiro-1.2.4_rce.py**
+最后更新：2021/04/04，最新添加 **cve-2021-26295_rce.py**
 
 # Readme
 Exphub包括多种不同名称、类型、格式、后缀的文件，这些文件可以大致分为[漏洞验证脚本]、[漏洞利用脚本]、[远程命令执行脚本]、[shell交互脚本]、[Webshell上传脚本]  
@@ -50,8 +54,9 @@ Exphub包括多种不同名称、类型、格式、后缀的文件，这些文�
 [**cve-2018-2894_poc_exp.py**](https://github.com/zhzyker/exphub/blob/master/weblogic/)	Weblogic 任意文件上传漏洞检测+利用  
 [**cve-2019-2618_webshell.py**](https://github.com/zhzyker/exphub/blob/master/weblogic/) Weblogic 任意文件上传漏洞(需要账户密码)[[使用]](https://freeerror.org/d/469)  
 [**cve-2020-2551_poc.py**](https://github.com/zhzyker/exphub/blob/master/weblogic/) Weblogic IIOP 反序列化漏洞检测脚本  
-[**cve-2020-2555_cmd.py**](https://github.com/zhzyker/exphub/blob/master/weblogic/) WebLogic T3 协议反序列化远程命令执行  
-[**cve-2020-2883_cmd.py**](https://github.com/zhzyker/exphub/blob/master/weblogic/) WebLogic T3 协议反序列化远程命令执行
+[**cve-2020-2555_cmd.py**](https://github.com/zhzyker/exphub/blob/master/weblogic/) WebLogic GIOP 协议反序列化远程命令执行  
+[**cve-2020-2883_cmd.py**](https://github.com/zhzyker/exphub/blob/master/weblogic/) WebLogic T3 协议反序列化远程命令执行  
+[**cve-2020-14882_rce.py**](https://github.com/zhzyker/exphub/blob/master/weblogic/) WebLogic console 未授权命令执行
 
 ## Shiro
 [**shiro-1.2.4_rce.py**](https://github.com/zhzyker/exphub/tree/master/shiro) Apache Shiro rememberMe < 1.2.4 RCE exploit script  
@@ -98,3 +103,6 @@ Exphub包括多种不同名称、类型、格式、后缀的文件，这些文�
 ## Jboss
 [**cve-2017-12149_poc.py**](https://github.com/zhzyker/exphub/tree/master/jboss) JBoss 5.x/6.x 反序列化远程代码执行漏洞验证脚本  
 [**cve-2017-12149_cmd.py**](https://github.com/zhzyker/exphub/tree/master/jboss) JBoss 5.x/6.x 反序列化远程代码执行漏洞利用脚本  
+
+## OFBiz
+[**cve-2021-26295_rce.py**](https://github.com/zhzyker/exphub/blob/master/ofbiz) RMI Deserializes Remote Code Execution  
